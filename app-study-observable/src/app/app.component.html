@@ -1,0 +1,4 @@
+<button (click)="showA = !showA">Toggle</button>
+<p>{{showA ? 'component A is display' : 'component A is hidden'}}</p>
+<app-bcomponent></app-bcomponent>
+<app-acomponent *ngIf="showA"></app-acomponent>
